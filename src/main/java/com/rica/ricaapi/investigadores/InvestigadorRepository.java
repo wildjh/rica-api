@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface InvestigadorRepository extends JpaRepository<Investigador, Long> {
 
-    boolean existsByCorreoInstitucional(String correoInstitucional);
-
+    boolean existsByCorreoInstitucional_Valor(String valor);
+    Investigador findByCorreoInstitucional_Valor(CorreoInstitucional valor);
 }
