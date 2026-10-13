@@ -1,0 +1,21 @@
+meta {
+  name: Listar publicación por correo
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/api/publicaciones?investigadorCorreo=ana.torres@uptc.edu.co
+  body: none
+  auth: inherit
+}
+
+params:query {
+  investigadorCorreo: ana.torres@uptc.edu.co
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  forwardAuthorizationHeader: false
+}
