@@ -1,5 +1,10 @@
 package com.rica.ricaapi;
 
+import com.rica.ricaapi.compartido.RecursoNoEncontradoException;
+import com.rica.ricaapi.investigadores.CorreoDuplicadoException;
+import com.rica.ricaapi.investigadores.Investigador;
+import com.rica.ricaapi.investigadores.InvestigadorRepository;
+import com.rica.ricaapi.investigadores.InvestigadorService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

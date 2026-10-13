@@ -1,4 +1,4 @@
-package com.rica.ricaapi;
+package com.rica.ricaapi.publicaciones;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
