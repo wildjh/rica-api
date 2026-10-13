@@ -1,11 +1,24 @@
 package com.rica.ricaapi;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "investigadores")
 public class Investigador {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nombre_completo", nullable = false, length = 150)
     private String nombreCompleto;
+
+    @Column(name = "correo_institucional", nullable = false, unique = true, length = 150)
     private String correoInstitucional;
+
+    @Column(name = "grupo_investigacion", length = 150)
     private String grupoInvestigacion;
+
 
     public Investigador(){
 
